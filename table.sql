@@ -14,4 +14,4 @@ CREATE TABLE `department`(
     PRIMARY KEY(`department_id`)
 );
 ALTER TABLE
-    `employee` ADD CONSTRAINT `employee_department_id_foreign` FOREIGN KEY(`department_id`) REFERENCES `department`(`department_id`);
+    `employee` ADD CONSTRAINT `employee_department_id_foreign` FOREIGN KEY(`department_id`) REFERENCES `department`(`department_id`) ON DELETE CASCADE ON UPDATE CASCADE;
